@@ -1,0 +1,11 @@
+<h1>Your Text:</h1>
+{{fulltext}}
+<h2>There are {{numwords}} words in your text</h2>
+<h2>There are {{uniquewords}} uniquewords in your text </h2>
+<h2>The frequency of words are: </h2>
+<br />
+ {% for word, count in totalcount %}
+
+ {{ word }} - {{count}}
+ <br />
+ {% endfor %}
